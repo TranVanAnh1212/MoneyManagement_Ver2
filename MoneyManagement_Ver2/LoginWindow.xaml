@@ -1,0 +1,43 @@
+﻿<Window x:Class="MoneyManagement_Ver2.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyManagement_Ver2"
+        mc:Ignorable="d"
+        FontSize="13"
+        Title="Login Window" Height="450" Width="800"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel VerticalAlignment="Bottom" Orientation="Vertical">
+                <TextBlock Text="Hello!" FontWeight="DemiBold" TextAlignment="Center" FontSize="40" FontFamily="Cambria"/>
+                <TextBlock Text="Sign in to your account" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Username: "/>
+                <Grid>
+                    <TextBox Margin="5"/>
+                </Grid>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+</Window>
